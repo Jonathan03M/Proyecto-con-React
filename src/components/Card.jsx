@@ -11,7 +11,7 @@ function Card({title, animacionJSON, descripcion}) {
         <h4 className='card-title'>{title}</h4>
         <p className='card-text- text-light'>{descripcion}</p>
 
-    <Link to="/primero" className='btn btn-outline-secondary' target='_blank'>
+    <Link to="/home" className='btn btn-outline-secondary'>
           Empieza tu rutina
         </Link>
     
