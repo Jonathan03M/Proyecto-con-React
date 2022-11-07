@@ -1,13 +1,13 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData3 from '../static/meditacion.json';
+import animationData from '../../static/agua.json';
 
 
-function Logo3() {
+function Logo() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
-        animationData: animationData3, 
+        animationData: animationData, 
         rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
         }
@@ -24,4 +24,4 @@ function Logo3() {
     );
   }
 
-export default Logo3
+export default Logo

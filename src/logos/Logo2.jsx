@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData2 from '../static/pera.json';
+import animationData2 from '../../static/pera.json';
 
 
 function Logo2() {
