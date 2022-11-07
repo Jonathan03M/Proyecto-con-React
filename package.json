@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.9.1",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
     "prop-types": "^15.8.1",
@@ -16,7 +17,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-lottie": "^1.2.3",
-    "react-router-dom": "^6.4.3"
+    "react-router-dom": "^6.4.3",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
