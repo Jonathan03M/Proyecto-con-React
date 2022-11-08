@@ -1,21 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
 
-body {
-	background: #F5F7FB;
-	font-family: 'Roboto', sans-serif;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 
 .contenedor {
+	
 	width: 90%;
 	max-width: 1000px;
 	margin: 50px auto;
@@ -25,7 +14,7 @@ body {
 	padding: 40px;
 	border-radius: 5px;
 	display: flex;
-	gap: 20px;
+	gap: 10px;
 }
 
 label {
@@ -35,7 +24,7 @@ label {
 }
 
 .grupo {
-	display: flex;
+display: flex;
 	flex-direction: column;
 	width: 80%;
 }

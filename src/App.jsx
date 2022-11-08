@@ -14,29 +14,31 @@ import Contacto from './Paginas/Contacto'
 function App() {
   return (
     
-    <div className='App' >
-  
+    <div>
+
       <Routes>
           <Route path="/" element={<Cards/>}/>
+          <Route path="/home" element={<Primero/>}/>
+          <Route path="/viaje" element={<Segundo/>}/>
+          <Route path="/progreso" element={<Tercero/>}/>
+          <Route path="/contacto" element={<Contacto/>}/>
       </Routes>
-      <div>
-      <main className="">
+      
+      
 
-     
-<section className="">
-        <Routes>
-            <Route path="/home" element={<Primero/>}/>
-            <Route path="/viaje" element={<Segundo/>}/>
-            <Route path="/progreso" element={<Tercero/>}/>
-            <Route path="/contacto" element={<Contacto/>}/>
-        </Routes>
-        </section>
-       </main>
-      </div>
+    </div>
+      
+      
+
+    
+
+        
+      
+
 
         
 
-    </div>
+    
 
   )
 }

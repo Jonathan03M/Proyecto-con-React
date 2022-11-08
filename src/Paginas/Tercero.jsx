@@ -10,14 +10,14 @@ function Tercero() {
 
 return (
 
-    <div className="grid lg:grid-cols-4 xl:grid-cols-6 min-h-screen">
+    <div className="grid lg:grid-cols-4 xl:grid-cols-6">
     <Sidebar3/>
     
     
-    <main className="flex items-center lg:col-span-3 xl:col-span-5 bg-gray-100 p-21  overflow-y-scroll">
+    <main className="flex items-center lg:col-span-3 xl:col-span-5">
 
 
-<section className='container d-flex justify-content-center align-items-center h-100'>
+<section className='container d-flex justify-content-center  h-100'>
 
     <div className='contenedor'>
         <div className='grupo'>
@@ -32,6 +32,7 @@ return (
             <label>Fecha y Hora</label>
             <DateTimePicker/>
         </div>
+    
 
     </div>
 
