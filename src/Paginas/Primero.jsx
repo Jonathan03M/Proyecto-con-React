@@ -26,14 +26,14 @@ return (
     
 
 
-    <div className="grid lg:grid-cols-4 xl:grid-cols-6 min-h-screen">
+    <div className=" grid lg:grid-cols-4 xl:grid-cols-6 min-h-screen">
     <Sidebar />
     <main className="lg:col-span-3 xl:col-span-5 bg-gray-100 p-4  overflow-y-scroll">
 
      
       <section className="">
       
-        <div className="container m-4 p-5 rounded mx-auto bg-light shadow">
+        <div className=" container m-4 p-5 rounded mx-auto bg-light shadow">
         
        
    <div className='card-to-do'>
