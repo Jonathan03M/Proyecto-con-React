@@ -1,7 +1,12 @@
 
 import React, {useState} from 'react';
 import Sidebar from './components/Sidebar'
-import Checkbox from './components/Checkbox';
+import './Primero.css'
+import TodoList from './reciclado/TodoList';
+import TodoAdd from './reciclado/TodoAdd';
+import { useTodo } from './Hooks/useTodo';
+
+
 
 
 
@@ -9,7 +14,13 @@ import Checkbox from './components/Checkbox';
 
 function Primero() {
 
- const [toggle, setToggle] = useState(false)
+  const {  todos,
+    todosCount,
+    pendingTodosCount,
+    handleNewTodo,
+    handleDeleteTodo,
+    handleCompleteTodo,
+    handleUpdateTodo } = useTodo()
 
 return (
     
@@ -17,128 +28,39 @@ return (
 
     <div className="grid lg:grid-cols-4 xl:grid-cols-6 min-h-screen">
     <Sidebar />
-    <main className="lg:col-span-3 xl:col-span-5 bg-gray-100 p-6  overflow-y-scroll">
+    <main className="lg:col-span-3 xl:col-span-5 bg-gray-100 p-4  overflow-y-scroll">
 
      
-      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-10 gap-8">
+      <section className="">
       
-        <div className="col-span-1 md:col-span-2 flex flex-col justify-between">
+        <div className="container m-4 p-5 rounded mx-auto bg-light shadow">
         
-          <div className="bg-white p-8 rounded-xl shadow-xl">
-            <div className="flex items-center gap-1 mb-1">
-              <div>
-                <h3 className="font-bold">Tarea:</h3>
-              </div>
-            </div>
-            <div className="flex items-center gap-1 mb-1">
-              <div>
-                <h3 className="font-bold">Beber agua</h3>
-                <p className="text-gray-500">Hazlo 3 veces esta semana</p>
-                <div className='flex align-items-center gap-3'>
-                <Checkbox/>
-              <Checkbox/>
-              <Checkbox />
-                </div>
-              
-              </div>
-            </div>
-            <div className="flex justify-end align-items-center gap-9">
-              
-            <button onClick={() => setToggle(!toggle)} className="btn btn-danger hover:underline">
-              Cambiar de tarea
-            </button>
-            </div>
-          </div>
-        </div>
-        {toggle && (
-        <div className="col-span-1 md:col-span-2 flex flex-col justify-between">
+       
+   <div className='card-to-do'>
+      <h1>Lista de habitos</h1>
+      <div className='counter-todos'>
+        <h3>N° Habitos: <span>{todosCount}</span></h3>
+        <h3>Pendientes: <span>{pendingTodosCount}</span></h3>
         
-        <div className="bg-white p-8 rounded-xl shadow-xl">
-          <div className="flex items-center gap-1 mb-1">
-            <div>
-              <h3 className="font-bold">Tarea:</h3>
-            </div>
-          </div>
-          <div className="flex items-center gap-1 mb-1">
-            <div>
-              <h3 className="font-bold">Beber agua</h3>
-              <p className="text-gray-500">Hazlo 3 veces esta semana</p>
-              <div className='flex align-items-center gap-3'>
-              <Checkbox/>
-            <Checkbox/>
-            <Checkbox />
-              </div>
-            
-            </div>
-          </div>
-          <div className="flex justify-end align-items-center gap-9">
-            
-            <button onClick={() => setToggle(!toggle)} className="btn btn-danger hover:underline">
-              Cambiar de tarea
-            </button>
-          </div>
-        </div>
-      </div>)}
-      {toggle && (
-      <div className="col-span-1 md:col-span-2 flex flex-col justify-between">
-        
-        <div className="bg-white p-8 rounded-xl shadow-xl">
-          <div className="flex items-center gap-1 mb-1">
-            <div>
-              <h3 className="font-bold">Tarea:</h3>
-            </div>
-          </div>
-          <div className="flex items-center gap-1 mb-1">
-            <div>
-              <h3 className="font-bold">Beber agua</h3>
-              <p className="text-gray-500">Hazlo 3 veces esta semana</p>
-              <div className='flex align-items-center gap-3'>
-              <Checkbox/>
-            <Checkbox/>
-            <Checkbox />
-              </div>
-            
-            </div>
-          </div>
-          <div className="flex justify-end align-items-center gap-9">
-            
-            <button className="btn btn-danger hover:underline">
-              Cambiar de tarea
-            </button>
-          </div>
-        </div>
       </div>
-      )}
-      {toggle && (
-        <div className="col-span-1 md:col-span-2 flex flex-col justify-between">
-        
-          <div className="bg-white p-8 rounded-xl shadow-xl">
-            <div className="flex items-center gap-1 mb-1">
-              <div>
-                <h3 className="font-bold">Tarea:</h3>
-              </div>
-            </div>
-            <div className="flex items-center gap-1 mb-1">
-              <div>
-                <h3 className="font-bold">Beber agua</h3>
-                <p className="text-gray-500">Hazlo 3 veces esta semana</p>
-                <div className='flex align-items-center gap-3'>
-                <Checkbox/>
-              <Checkbox/>
-              <Checkbox />
-                </div>
-              
-              </div>
-            </div>
-            <div className="flex justify-end align-items-center gap-9">
-              
-              <button className="btn btn-danger hover:underline">
-                Cambiar de tarea
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <div className='add-todo'>
+        <h3>Agregar Habito</h3>
+        <TodoAdd handleNewTodo={handleNewTodo}/>
+      </div>
+      <TodoList 
+        todos={todos}
+        handleUpdateTodo={handleUpdateTodo}
+        handleDeleteTodo={handleDeleteTodo}
+        handleCompleteTodo={handleCompleteTodo}
+      />
+   </div>
+
+               
+
+     
+   
+</div>
+      
       </section>
     </main>
   </div>
