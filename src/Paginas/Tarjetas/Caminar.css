@@ -48,6 +48,8 @@ input[type=checkbox]:checked ~ span::before {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+
+
 span {
   position: relative;
   cursor: pointer;
@@ -85,6 +87,7 @@ body{
     
     margin-top:50px;
     margin-bottom:50px;
+    
 }
 
 .float-right.headingright {

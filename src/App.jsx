@@ -8,7 +8,7 @@ import Caminar from './Paginas/Tarjetas/Caminar.jsx'
 import Vida from './Paginas/Tarjetas/Vida'
 import Telefono from './Paginas/Tarjetas/Telefono'
 import Meditacion from './Paginas/Tarjetas/Meditacion'
-import Error404 from './Paginas/Error404'
+import Error404 from './Paginas/Error/Error404'
 
 
 
@@ -24,7 +24,6 @@ function App() {
 
       <Routes>
           <Route path="/" element={<Primero/>}/>
-          <Route path="*" element={<Error404/>}/>
           <Route path="/viaje" element={<Segundo/>}/>
           <Route path="/progreso" element={<Tercero/>}/>
           <Route path="/contacto" element={<Contacto/>}/>
@@ -32,6 +31,7 @@ function App() {
           <Route path="/viaje/vida" element={<Vida/>}/>
           <Route path="/viaje/progreso" element={<Telefono/>}/>
           <Route path="/viaje/meditacion" element={<Meditacion/>}/>
+          <Route path="*" element={<Error404/>}/>
       </Routes>
       
 
