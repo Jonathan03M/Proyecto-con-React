@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
-import FlechaIzquierda from '../assets/Izquierdo.jsx'
-import FlechaDerecha from '../assets/Derecha.jsx'
+import FlechaIzquierda from '../../assets/Izquierdo.jsx'
+import FlechaDerecha from '../../assets/Derecha.jsx'
 import './Slider.css'
 
 
