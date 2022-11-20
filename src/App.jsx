@@ -9,6 +9,7 @@ import Vida from './Paginas/Tarjetas/Vida'
 import Telefono from './Paginas/Tarjetas/Telefono'
 import Meditacion from './Paginas/Tarjetas/Meditacion'
 import Error404 from './Paginas/Error/Error404'
+import Progreso from './Progreso/Progreso'
 
 
 
@@ -25,7 +26,8 @@ function App() {
       <Routes>
           <Route path="/" element={<Primero/>}/>
           <Route path="/viaje" element={<Segundo/>}/>
-          <Route path="/progreso" element={<Tercero/>}/>
+          <Route path="/curiosidades" element={<Tercero/>}/>
+          <Route path="/progreso" element={<Progreso/>}/>
           <Route path="/contacto" element={<Contacto/>}/>
           <Route path="/viaje/camino" element={<Caminar/>}/>
           <Route path="/viaje/vida" element={<Vida/>}/>

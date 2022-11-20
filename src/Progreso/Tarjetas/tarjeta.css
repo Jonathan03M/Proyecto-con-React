@@ -1,0 +1,9 @@
+.Tarjetas {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.parentContainer {
+    width: 100%;
+}

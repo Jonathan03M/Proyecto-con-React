@@ -1,13 +1,13 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData6 from '../../static/curiosidad.json';
+import animationData7 from '../../static/fitness.json';
 
 
-function Logo6() {
+function Logo8() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
-        animationData: animationData6, 
+        animationData: animationData7, 
         rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
         }
@@ -24,4 +24,4 @@ function Logo6() {
     );
   }
 
-export default Logo6
+export default Logo8

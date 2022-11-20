@@ -5,11 +5,12 @@ import {
   RiFileCopyLine,
   RiWalletLine,
 } from "react-icons/ri";
-import Logo4 from '../../logos/Logo4'
+
+import Logo8 from '../../logos/Logo8'
 import './Sidebar.css'
 import {Link} from 'react-router-dom'
 
-const Sidebar = () => {
+const Sidebar4 = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
@@ -23,7 +24,7 @@ const Sidebar = () => {
       >
         {/* Profile */}
         <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
-            <Logo4/>
+            <Logo8/>
         </div>
         {/* Nav */}
         <div className="bg-primary-300 p-8 rounded-tr-[100px] h-[70vh] flex flex-col justify-between gap-8">
@@ -68,4 +69,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Sidebar4;
