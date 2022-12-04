@@ -18,28 +18,28 @@ return (
 <section className='container d-flex justify-content-center  h-100'>
 
     <div className='contenedor'>
-    <div class="scene">
-    <div class="book-wrap">
-      <div class="left-side">
-        <div class="book-cover-left"></div>
-        <div class="layer1">
-          <div class="page-left"></div>
+    <div className="scene">
+    <div className="book-wrap">
+      <div className="left-side">
+        <div className="book-cover-left"></div>
+        <div className="layer1">
+          <div className="page-left"></div>
         </div>
-        <div class="layer2">
-          <div class="page-left"></div>
+        <div className="layer2">
+          <div className="page-left"></div>
         </div>
-        <div class="layer3">
-          <div class="page-left"></div>
+        <div className="layer3">
+          <div className="page-left"></div>
         </div>
-        <div class="layer4">
-          <div class="page-left"></div>
+        <div className="layer4">
+          <div className="page-left"></div>
         </div>
-        <div class="layer-text">
-          <div class="page-left-2">
-            <div class="corner"></div>
-            <div class="corner2"></div>
-            <div class="corner-fold"></div>
-            <div class="page-text w-richtext">
+        <div className="layer-text">
+          <div className="page-left-2">
+            <div className="corner"></div>
+            <div className="corner2"></div>
+            <div className="corner-fold"></div>
+            <div className="page-text w-richtext">
               <h3><strong>Habitos a seguir</strong></h3>
               <h5>‍-Realizar ejercicio.</h5>
               <p>No hace falta que todos los días se realicen actividades físicas, pero al menos caminar durante 30 minutos cuatro veces por semana, es lo básico para mantener el cuerpo activo.</p>
@@ -51,24 +51,24 @@ return (
           </div>
         </div>
       </div>
-      <div class="center"></div>
-      <div class="right-side">
-        <div class="book-cover-right"></div>
-        <div class="layer1">
-          <div class="page-right"></div>
+      <div className="center"></div>
+      <div className="right-side">
+        <div className="book-cover-right"></div>
+        <div className="layer1">
+          <div className="page-right"></div>
         </div>
-        <div class="layer2 right">
-          <div class="page-right"></div>
+        <div className="layer2 right">
+          <div className="page-right"></div>
         </div>
-        <div class="layer3 right">
-          <div class="page-right"></div>
+        <div className="layer3 right">
+          <div className="page-right"></div>
         </div>
-        <div class="layer4 right">
-          <div class="page-right"></div>
+        <div className="layer4 right">
+          <div className="page-right"></div>
         </div>
-        <div class="layer-text right">
-          <div class="page-right-2">
-            <div class="page-text w-richtext">
+        <div className="layer-text right">
+          <div className="page-right-2">
+            <div className="page-text w-richtext">
               <h5><strong>¿Sabias Que?</strong></h5>
               <h4>‍Miel para llenarte de energia</h4>
               <p>Si buscas una alternativa saludable al azúcar de mesa, la miel es una gran opción. Entre sus múltiples propiedades, este alimento es una gran fuente de energía o puede ayudarte a suavizar la tos. ¡Pruébalo! </p>

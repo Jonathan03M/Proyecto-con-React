@@ -40,7 +40,7 @@ const Sidebar = () => {
               to="/viaje"
               className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
             >
-              <RiFileCopyLine /> Viaje
+              <RiFileCopyLine /> Rutina
             </Link>
             
             <Link
@@ -55,6 +55,13 @@ const Sidebar = () => {
               className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
             >
               <RiWalletLine /> Progreso
+            </Link>
+
+            <Link
+              to="/nutricion"
+              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
+            >
+              <RiWalletLine /> Nutricion
             </Link>
           </nav>
           <div className="bg-primary-900/50 text-white p-4 rounded-xl">

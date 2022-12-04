@@ -10,6 +10,9 @@ import Telefono from './Paginas/Tarjetas/Telefono'
 import Meditacion from './Paginas/Tarjetas/Meditacion'
 import Error404 from './Paginas/Error/Error404'
 import Progreso from './Progreso/Progreso'
+import Nutricion from './Nutricion/Nutricion'
+import Login from './backend/Login'
+
 
 
 
@@ -21,13 +24,17 @@ function App() {
 
   return (
     
+    
+
     <div> 
 
       <Routes>
+          <Route path="/planmensual" element={<Login/>}/>
           <Route path="/" element={<Primero/>}/>
           <Route path="/viaje" element={<Segundo/>}/>
           <Route path="/curiosidades" element={<Tercero/>}/>
           <Route path="/progreso" element={<Progreso/>}/>
+          <Route path="/nutricion/*" element={<Nutricion/>}/>
           <Route path="/contacto" element={<Contacto/>}/>
           <Route path="/viaje/camino" element={<Caminar/>}/>
           <Route path="/viaje/vida" element={<Vida/>}/>
@@ -38,6 +45,7 @@ function App() {
       
 
     </div>
+ 
       
       
 
